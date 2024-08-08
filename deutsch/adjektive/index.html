@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدولين بالكلمات والجمل</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .container {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .audio-control {
+            margin-top: 10px;
+        }
+
+        .de {
+            direction: ltr;
+            text-align: left;
+        }
+
+        .ar {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .center-ltr {
+            direction: ltr;
+            text-align: center;
+        }
+
+        .center-rtl {
+            direction: rtl;
+            text-align: center;
+        }
+
+        .left-ltr {
+            direction: ltr;
+            text-align: left;
+        }
+
+        .left-rtl {
+            direction: rtl;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            /* centre the image */
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        /* Icon fa-play on Arabic Rotate 180° */
+        .fa-rotate-180 {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1 class="center-ltr">
+            <span>Deutsch Adjektive</span>
+            <span>الصفات الألمانية</span>
+        </h1>
+    </header>
+    <hr>
+    <div class="container">
+        <h2 class="center-rtl">
+            <span>الكلمات</span>
+            <span>Die Wörter</span>
+        </h2>
+        <div class="left-ltr">
+            <button onclick="toggleAudio(this, 'audio/01-gross.mp3')">
+                <i class="fas fa-play fa-ml"></i>
+            </button>
+            <span>Groß</span>
+        </div>
+        <div class="right-rlt">
+            <button onclick="toggleAudio(this, 'audio/01-kabeer.mp3')">
+                <i class="fas fa-play fa-rotate-180 fa-mr"></i>
+            </button>
+            <span>كبير</span>
+        </div>
+        <div class="left-ltr">
+            <button onclick="toggleAudio(this, 'audio/02-klein.mp3')">
+                <i class="fas fa-play fa-ml"></i></button>
+            <span>Klein</span>
+        </div>
+        <div class="right-ltr">
+            <button onclick="toggleAudio(this, 'audio/02-sagheer.mp3')">
+                <i class="fas fa-play fa-rotate-180 fa-mr"></i>
+            </button>
+            <span>صغير</span>
+        </div>
+        <div class="left-ltr">
+            <button onclick="toggleAudio(this, 'audio/03-schnell.mp3')">
+                <i class="fas fa-play fa-ml"></i>
+            </button>
+            <span>Schnell</span>
+        </div>
+        <div class="right-ltr">
+            <button onclick="toggleAudio(this, 'audio/03-saree.mp3')">
+                <i class="fas fa-play fa-rotate-180 fa-mr"></i>
+            </button>
+            <span>سريع</span>
+        </div>
+        <div class="left-ltr">
+            <button onclick="toggleAudio(this, 'audio/04-langsam.mp3')">
+                <i class="fas fa-play fa-ml"></i>
+            </button>
+            <span>Langsam</span>
+        </div>
+        <div class="right-ltr">
+            <button onclick="toggleAudio(this, 'audio/04-batee.mp3')">
+                <i class="fas fa-play fa-rotate-180 fa-mr"></i>
+            </button>
+            <span>بطيء</span>
+        </div>
+        <div class="left-ltr">
+            <button onclick="toggleAudio(this, 'audio/05-alt.mp3')">
+                <i class="fas fa-play fa-ml"></i>
+            </button>
+            <span>Alt</span>
+        </div>
+        <div class="right-ltr">
+            <button onclick="toggleAudio(this, 'audio/05-qadeem.mp3')">
+                <i class="fas fa-play fa-rotate-180 fa-mr"></i>
+            </button>
+            <span>قديم</span>
+        </div>
+
+    </div>
+
+    <br>
+    <hr>
+
+    <h2 class="center-rtl">
+        <span>الجمل</span>
+        <span>Die Sätze</span>
+    </h2>
+    <div class="container">
+        <!-- 01 Groß Adjektive | Das Haus ist groß. -->
+        <div class="01-das-haus-ist-groß">
+            <div>
+                <h3 class="center-ltr">Das Haus ist groß.</h3>
+                <img src="pics/01-das-haus-ist-groß.jpg" width="300" alt="Das haus ist groß">
+                </span>
+            </div>
+            <div class="left-ltr">
+                <button onclick="toggleAudio(this, 'audio/01-das-haus-ist-groß.mp3')">
+                    <i class="fas fa-play fa-ml"></i>
+                </button>
+                <span>Das Haus ist groß.</span>
+            </div>
+            <div>
+                <button onclick="toggleAudio(this, 'audio/01-beit-kabeer.mp3')"><i
+                        class="fas fa-play fa-rotate-180 fa-mr"></i></button>
+                <span>المنزل كبير.</span>
+            </div>
+        </div>
+
+        <!-- 02 Klein Adjektive | Der Hund ist klein. -->
+        <div class="02-der-hund-ist-klein">
+            <div>
+                <span>
+                    <h3 class="center-ltr">Der Hund ist klein.</h3>
+                    <img src="pics/02-der-hund-ist-klein.jpg" width="300" alt="Der hund ist klein">
+                </span>
+            </div>
+            <div class="left-ltr">
+                <button onclick="toggleAudio(this, 'audio/02-der-hund-ist-klein.mp3')"><i
+                        class="fas fa-play fa-ml"></i></button>
+                <span>Der Hund ist klein.</span>
+            </div>
+            <div>
+                <button onclick="toggleAudio(this, 'audio/02-kalb-sagheer.mp3')"><i
+                        class="fas fa-play fa-rotate-180 fa-mr"></i></button>
+                <span>الكلب صغير.</span>
+            </div>
+        </div>
+
+        <!-- 03 Schnell Adjektive | Das Auto ist schnell. -->
+        <div class="03-das-auto-ist-schnell">
+            <div>
+                <h3 class="center-ltr">Das Auto ist schnell.</h3>
+                <img src="pics/03-das-auto-ist-schnell.jpg" width="300" alt="Das auto ist schnell">
+                </span>
+            </div>
+            <div class="left-ltr">
+                <button onclick="toggleAudio(this, 'audio/03-das-auto-schnell.mp3')">
+                    <i class="fas fa-play fa-ml"></i>
+                </button>
+                <span>Das Auto ist schnell.</span>
+            </div>
+            <div>
+                <button onclick="toggleAudio(this, 'audio/03-a-ssayara-sareea.mp3')">
+                    <i class="fas fa-play fa-rotate-180 fa-mr"></i>
+                </button>
+                <span>السيارة سريعة.</span>
+            </div>
+    </div>
+
+        <!-- 04 Langsam Adjektive | Die Schildkröte ist langsam. -->
+        <div class="04-die-schildkrote-ist-langsam">
+            <div>
+                <span>
+                    <h3 class="center-ltr">Die Schildkröte ist langsam.</h3>
+                    <img src="pics/04-die-schildkrote-ist-langsam.jpg" width="300" alt="Die schildkrote ist langsam">
+                </span>
+            </div>
+            <div class="left-ltr">
+                <button onclick="toggleAudio(this, 'audio/04-die-schildkrote-ist-langsam.mp3')">
+                    <i class="fas fa-play fa-ml"></i>
+                </button>
+                <span>Die Schildkröte ist langsam.</span>
+            </div>
+            <div class="left-ltr">
+                <button onclick="toggleAudio(this, 'audio/04-schildkrote.mp3')">
+                    <i class="fas fa-play fa-ml"></i>
+                </button>
+                <span>Schildkröte</span>
+            </div>
+            <div class="left-ltr">
+                <button onclick="toggleAudio(this, 'audio/04-die-schildkrote.mp3')">
+                    <i class="fas fa-play fa-ml"></i>
+                </button>
+                <span>Die Schildkröte</span>
+            </div>
+            <div>
+                <button onclick="toggleAudio(this, 'audio/04-a-ssolhafae-bateea.mp3')">
+                    <i class="fas fa-play fa-rotate-180 fa-mr"></i>
+                </button>
+                <span>السلحفاة بطيئة.</span>
+            </div>
+        </div>
+
+        <!-- 05 Alt Adjektive | Das Buch ist alt. -->
+        <div class="05-das-buch-ist-alt">
+            <div>
+                <span>
+                    <h3 class="center-ltr">Das Buch ist alt.</h3>
+                    <img src="pics/05-das-buch-ist-alt.jpg" width="300" alt="Das Buch ist alt">
+                </span>
+            </div>
+            <div class="left-ltr">
+                <button onclick="toggleAudio(this, 'audio/05-das-buch-ist-alt.mp3')">
+                    <i class="fas fa-play fa-ml"></i>
+                </button>
+                <span>Das Buch ist alt.</span>
+            </div>
+            <div>
+                <button onclick="toggleAudio(this, 'audio/05-al-kitab-qadeem.mp3')">
+                    <i class="fas fa-play fa-rotate-180 fa-mr"></i>
+                </button>
+                <span>الكتاب قديم.</span>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <script>
+        var currentAudio = null;
+        var currentButton = null;
+
+        function toggleAudio(button, src) {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                if (currentButton) {
+                    currentButton.querySelector('i').classList.remove('fa-pause');
+                    currentButton.querySelector('i').classList.add('fa-play');
+
+                }
+            }
+
+            if (currentAudio && currentAudio.src.includes(src) && !currentAudio.paused) {
+                currentAudio = null;
+                currentButton = null;
+                return;
+            }
+
+            currentAudio = new Audio(src);
+            currentAudio.play();
+
+            currentButton = button;
+
+            button.querySelector('i').classList.remove('fa-play');
+            button.querySelector('i').classList.add('fa-pause');
+
+            currentAudio.onended = function () {
+                button.querySelector('i').classList.remove('fa-pause');
+                button.querySelector('i').classList.add('fa-play');
+                currentAudio = null;
+                currentButton = null;
+            };
+        }
+    </script>
+</body>
+
+</html>

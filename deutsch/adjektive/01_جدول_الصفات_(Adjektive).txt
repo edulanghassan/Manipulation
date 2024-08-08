@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2024-08-06T18:18:06+01:00
+
+====== 01 جدول الصفات (Adjektive) ======
+Created Tuesday 06 August 2024
+
+| #  | الألمانية | العربية | المثال الألمانية             |  المثال العربية | الإنجليزية          |
+|:--:|:----------|--------:|:-----------------------------|----------------:|:--------------------|
+| 01 | Groß      |    كبير | Das Haus ist groß.           |     البيت كبير. | The house is big.   |
+| 02 | Klein      |    صغير | Der Hund ist klein.          |     الكلب صغير. | The dog is big.     |
+| 03 | Schnell   |    سريع | Das Auto ist schnell.        |  السيارة سريعة. | The car is fast.    |
+| 04 | Langsam   |    بطيء | Die Schildkröte ist langsam. | السلحفاة بطيئة. | The turtle is slow. |
+| 05 | Alt       |    قديم | Das Buch ist alt.            |    الكتاب قديم. | The book is old.    |
+
+**Das Haus ist groß.**
+{{.\Default_Das_Haus_ist_gro_2.jpg?width=300}}
+
+
+
+
+
