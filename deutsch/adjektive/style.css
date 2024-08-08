@@ -1,0 +1,94 @@
+/* Container */
+.container {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #2a2a2a; /* Darker background */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button {
+    background: #444; /* Dark button background */
+    color: #e0e0e0; /* Light text for contrast */
+    border: 1px solid #555; /* Slight border to define button edges */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555; /* Lighter on hover */
+}
+
+/* Audio Control */
+.audio-control {
+    margin-top: 10px;
+    background-color: #333; /* Darker background for controls */
+    padding: 10px;
+    border-radius: 5px;
+    color: #ccc; /* Light text */
+}
+
+/* Text Direction Classes */
+.de {
+    direction: ltr;
+    text-align: left;
+    color: #ccc; /* Light text */
+}
+
+.ar {
+    direction: rtl;
+    text-align: right;
+    color: #ccc; /* Light text */
+}
+
+/* Centered Text Classes */
+.center-ltr {
+    direction: ltr;
+    text-align: center;
+    color: #ccc; /* Light text */
+}
+
+.center-rtl {
+    direction: rtl;
+    text-align: center;
+    color: #ccc; /* Light text */
+}
+
+/* Left-aligned Text Classes */
+.left-ltr {
+    direction: ltr;
+    text-align: left;
+    color: #ccc; /* Light text */
+}
+
+.left-rtl {
+    direction: rtl;
+    text-align: left;
+    color: #ccc; /* Light text */
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #555; /* Add border for definition */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Rotated Icon */
+.fa-rotate-180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color: #ccc; /* Light text */
+}

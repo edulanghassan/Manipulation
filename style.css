@@ -1,0 +1,140 @@
+/* Base Styles */
+
+html {
+    background-color: #444;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.brand-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu li {
+    margin: 5px 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-card {
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #5f5f5f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.language-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.language-card-img img {
+    width: 100%;
+    display: block;
+    background-color: #444;
+}
+
+.language-card-title {
+    padding: 10px;
+    text-align: center;
+}
+
+.language-card-title h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for Larger Screens */
+@media(min-width: 600px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .languages {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .language-card {
+        width: 45%;
+    }
+}
+
+@media(min-width: 900px) {
+    .menu {
+        justify-content: space-between;
+    }
+
+    .language-card {
+        width: 30%;
+    }
+}
+
+section.languages {
+    background-color: #333;
+    padding: 10px;
+
+}
